@@ -1,0 +1,1 @@
+Taste Haven is a responsive, modern restaurant website landing page showcasing featured dishes, a hero section, and a professional navigation header. It uses HTML5 and CSS3, with a mobile-friendly layout and attractive design.
