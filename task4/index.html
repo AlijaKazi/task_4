@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taste Haven</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <img src="logo.png" alt="Taste Haven Logo">
+    <span>Taste Haven</span>
+  </div>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Taste Haven</h1>
+      <p>Fresh, delicious meals crafted with passion. Experience flavors that delight your senses!</p>
+      <a href="#" class="btn">Book a Table</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Our Specials</h2>
+    <div class="feature-cards">
+      <div class="card">
+        <img src="dish1.jpg" alt="Grilled Salmon">
+        <div class="card-text">
+          <h3>Grilled Salmon</h3>
+          <p>Freshly grilled salmon served with seasonal veggies and a hint of lemon zest.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="dish2.jpg" alt="Classic Pasta">
+        <div class="card-text">
+          <h3>Classic Pasta</h3>
+          <p>Italian pasta with our chef’s secret homemade sauce and fresh herbs.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="dish3.jpg" alt="Cheese Pizza">
+        <div class="card-text">
+          <h3>Cheese Pizza</h3>
+          <p>Wood-fired pizza topped with fresh mozzarella and basil leaves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Taste Haven | Follow us on 
+      <a href="#">Facebook</a>, 
+      <a href="#">Instagram</a>, 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+</body>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  
+  document.addEventListener('click', function(event) {
+    if (!navLinks.contains(event.target) && !menuToggle.contains(event.target) && menuToggle.checked) {
+      menuToggle.checked = false;
+    }
+  });
+</script>
+
+</html>
